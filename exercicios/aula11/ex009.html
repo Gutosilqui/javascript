@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANA</title>
+</head>
+<body>
+    <h1>Quem é o amor da minha vida???</h1>
+    Qual é o nome do meu amor:<input type="text" name="txtamo" id="txtamo">
+    <input type="button" value="AMOR" onclick="resultado()">
+    <div id="res">
+    </div>
+    <script>
+        function resultado(){
+            var Ana1 = "Ana"
+            var Ana2 = "ana"
+            var txta = window.document.querySelector('input#txtamo')
+            var res = window.document.querySelector('div#res')
+            var amor = String(txta.value)
+            if(amor == Ana1 || amor == Ana2){
+                res.innerHTML = `<p>Isso mesmo, meu amor é a ${amor}</p>`
+            } else {
+                res.innerHTML = '<p>Não, nem conheço essa vagabunda!</p>'
+            }
+            res.innerHTML += `<p><strong>Ana eu te amo muito S2</strong></p>`
+        }
+    </script>
+</body>
+</html>
